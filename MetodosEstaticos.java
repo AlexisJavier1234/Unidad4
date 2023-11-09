@@ -30,6 +30,8 @@ public class MetodosEstaticos {
         
         MetodosEstaticos.promedioPorMateria1();
         MetodosEstaticos.promedioPorMateria2();
+        MetodosEstaticos.promedioPorMateria3();
+        MetodosEstaticos.promedioPorMateria4();
     }
 
     public static void promedioPorEstudiante1() {
@@ -76,12 +78,20 @@ public class MetodosEstaticos {
         }
         System.out.println("El promedio de la materia 2 es:" + (total / valores.length));
     }
-    
-    
-    
-    
-    
-    
-    
-    
+    public static void promedioPorMateria3() {
+        double[] valores = {78.5,89.0,91.0};
+        double total = 0;
+        for (int i = 0; i < valores.length; i++) {
+            total += valores[i];
+        }
+        System.out.println("El promedio de la materia 3 es:" + (total / valores.length));
+    }
+    public static void promedioPorMateria4() {
+        double[] valores = {92.0,94.5,87.5};
+        double total = 0;
+        for (int i = 0; i < valores.length; i++) {
+            total += valores[i];
+        }
+        System.out.println("El promedio de la materia 4 es:" + (total / valores.length));
+    }   
 }
